@@ -36,7 +36,7 @@ const Sidebar = () => {
         </li>
         <li className="nav-item">
           <a href="./settings" className="nav-link text-light" onMouseEnter={e => e.target.style.backgroundColor = '#343a40'} onMouseLeave={e => e.target.style.backgroundColor = ''}>
-            <span role="img" aria-label="settings">⚙️</span> qwertyuiuhgfdsdfvbnf
+            <span role="img" aria-label="settings">⚙️</span> Settings
           </a>
         </li>
         <li className="nav-item">
