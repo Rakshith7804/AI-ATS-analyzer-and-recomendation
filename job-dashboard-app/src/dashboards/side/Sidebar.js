@@ -11,7 +11,7 @@ const Sidebar = () => {
         </li>
         <li className="nav-item">
           <a href="./resume" className="nav-link text-light" onMouseEnter={e => e.target.style.backgroundColor = '#343a40'} onMouseLeave={e => e.target.style.backgroundColor = ''}>
-            <span role="img" aria-label="resume">📄</span> My Resume
+            <span role="img" aria-label="resume">📄</span> Build Resumes
           </a>
         </li>
         <li className="nav-item">
