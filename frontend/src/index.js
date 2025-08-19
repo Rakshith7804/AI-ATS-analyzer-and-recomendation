@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import Header from './landingpage/Navbar';
+import Header from './landingpage/Header';
 import Footer from './landingpage/Footer';
 import HeroSection from './landingpage/HeroSection';
 import KeyFeatures from './landingpage/KeyFeatures';
