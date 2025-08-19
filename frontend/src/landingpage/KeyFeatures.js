@@ -2,7 +2,7 @@ import React from 'react';
 
 const KeyFeatures = () => (
   <section className="p-4 text-center">
-    <h2 className="h3 text-dark mb-4">Key Features</h2>
+    <h2 className="h2 fw-bold text-dark mb-4">Key Features</h2>
     <div className="row row-cols-1 row-cols-md-2 g-5" style={{ maxWidth: '900px', margin: '0 auto' }}>
       <div className="col">
         <div className="p-3 bg-light rounded border border-dark shadow-lg" style={{ '--bs-border-opacity': .2 }}>

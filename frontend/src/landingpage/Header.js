@@ -1,33 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary border border-primary shadow-lg sticky-top">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">AI Hiring Platform</a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a className="navbar-brand" href="/">AI Hiring Platform</a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="p-2 d-flex gap-3" id="navbarNav">
-        <ul className='d-flex gap-3 navbar-nav '>
-          <li className="nav-item text-decoration-none">
-            <a className="nav-link active" href="#">Home</a>
+        <ul className="d-flex gap-3 navbar-nav">
+          <li className="nav-item">
+            <Link className="nav-link active" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="./landingpage/KeyFeatures.js">Features</a>
+            <Link className="nav-link" to="/features">Features</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="./landingpage/HowItWorks.js">How It Works</a>
+            <Link className="nav-link" to="/how-it-works">How It Works</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="./landingpage/WhyChooseUs.js">Why Choose Us</a>
+            <Link className="nav-link" to="/why-choose-us">Why Choose Us</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="./landingpage/Contact.js">Contact Us</a>
+            <Link className="nav-link" to="/contact">Contact Us</Link>
           </li>
         </ul>
-          <button className="btn btn-light text-primary w-30" type="button">Sign In</button>
-          <button className="btn btn-light text-primary w-30" type="button">Login</button>
-
+        <Link to="/signup" className="btn btn-light text-primary">
+          Sign Up
+        </Link>
+        <Link to="/signin" className="btn btn-light text-primary">
+          Login
+        </Link>
       </div>
     </div>
   </nav>

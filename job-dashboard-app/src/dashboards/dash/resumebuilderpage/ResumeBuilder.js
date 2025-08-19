@@ -2,8 +2,9 @@ import React from 'react';
 
 const ResumeBuilder = () => {
   return (
-    <div className="bg-dark text-light p-4">
-      <h1 className="display-4">Resume Builder</h1>
+    <div className="bg-dark text-light">
+      <h1 className="display-7">Resume Builder</h1>
+      <hr></hr>
       <form className="mt-4">
         <div className="mb-3">
           <label className="form-label">Full Name</label>
@@ -19,6 +20,7 @@ const ResumeBuilder = () => {
         </div>
         <button type="submit" className="btn btn-primary">Save Resume</button>
       </form>
+      
     </div>
   );
 };

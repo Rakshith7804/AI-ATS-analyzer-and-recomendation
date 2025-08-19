@@ -1,40 +1,36 @@
-import React from 'react';
+import React from "react";
 
 const WhyChooseATS = () => (
-  <section className="p-4 m-4 text-center bg-light">
-    <h2 className="h3 text-dark mb-4">Why Choose Our Advanced ATS</h2>
+  <section className="py-5">
     <div className="container">
-      <div className="row row-cols-1 row-cols-md-2 g-4">
-        <div className="col">
-          <div className="card h-100 border-0 shadow-sm">
-            <div className="card-body">
-              <h3 className="h5 text-primary mb-2">Enhanced Efficiency</h3>
-              <p className="card-text text-muted">Streamline your hiring process with automated resume screening and ranking.</p>
-            </div>
-          </div>
+      <div className="row align-items-center">
+        {/* Left Column - Bullet Points */}
+        <div className="col-md-7">
+          <h2 className="h4 fw-bold mb-4">Why Choose Our ATS</h2>
+          <ul className="list-unstyled text-muted">
+            <li className="mb-2">
+              <span className="text-primary me-2">•</span> Saves Time in Hiring
+            </li>
+            <li className="mb-2">
+              <span className="text-primary me-2">•</span> Improves Candidate Quality
+            </li>
+            <li className="mb-2">
+              <span className="text-primary me-2">•</span> Personalized Job & Course Recommendations
+            </li>
+            <li className="mb-2">
+              <span className="text-primary me-2">•</span> Works for Freshers & Experienced Professionals
+            </li>
+          </ul>
         </div>
-        <div className="col">
-          <div className="card h-100 border-0 shadow-sm">
-            <div className="card-body">
-              <h3 className="h5 text-primary mb-2">Accurate Candidate Matching</h3>
-              <p className="card-text text-muted">Leverage AI to find the best candidates tailored to your job requirements.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card h-100 border-0 shadow-sm">
-            <div className="card-body">
-              <h3 className="h5 text-primary mb-2">Real-Time Insights</h3>
-              <p className="card-text text-muted">Gain actionable data and analytics to optimize your recruitment strategy.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="card h-100 border-0 shadow-sm">
-            <div className="card-body">
-              <h3 className="h5 text-primary mb-2">Scalable for All Sizes</h3>
-              <p className="card-text text-muted">Supports businesses of all sizes, from startups to large enterprises.</p>
-            </div>
+
+        {/* Right Column - Testimonial Box */}
+        <div className="col-md-5">
+          <div className="p-4 rounded bg-light">
+            <h5 className="fw-bold mb-3">Testimonials</h5>
+            <p className="fst-italic text-muted mb-1">
+              "We reduced hiring time by 40% thanks to this ATS!"
+            </p>
+            <small className="text-muted">team tjit</small>
           </div>
         </div>
       </div>
