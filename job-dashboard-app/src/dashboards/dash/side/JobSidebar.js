@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-const Sidebar = () => {
+const JobSidebar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -60,4 +60,4 @@ const Sidebar = () => {
   );
 };  
 
-export default Sidebar;
+export default JobSidebar;
