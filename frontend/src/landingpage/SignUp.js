@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import { useNavigate } from 'react-router-dom';
@@ -72,7 +72,7 @@ const SignUp = (props) => {
 
   return (
     <div className="d-flex vh-100 overflow-hidden bg-light" style={{ 
-      backgroundImage: 'radial-gradient(ellipse at 50% 50%, #313030ff, #0000007f)',
+      backgroundImage: 'radial-gradient(ellipse at 50% 50%, #95acffff, #a9caff7f)',
       position: 'relative',
       zIndex: 0,
     }}>
