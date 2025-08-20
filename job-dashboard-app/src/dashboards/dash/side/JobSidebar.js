@@ -50,8 +50,23 @@ const JobSidebar = () => {
             <span role="img" aria-label="settings">⚙️</span> Settings
           </a>
         </li>
-        <li className={`nav-item ${isActive('http://localhost:3000') ? 'active' : ''}`}>
-          <a href="http://localhost:3000" className={`nav-link ${isActive('http://localhost:3000') ? 'text-info active' : 'text-light'}`} onMouseEnter={e => e.target.style.backgroundColor = '#343a40'} onMouseLeave={e => e.target.style.backgroundColor = ''} style={{ background: isActive('http://localhost:3000') ? 'linear-gradient(90deg, #3b82f6, #1e40af)' : 'none', color: isActive('http://localhost:3000') ? '#ffffff' : '' }}>
+        <li className="nav-item">
+          <a 
+            href="/signin" 
+            onClick={(e) => {
+              e.preventDefault();
+              // Clear authentication data
+              localStorage.removeItem('token');
+              localStorage.removeItem('user');
+              localStorage.removeItem('usertype');
+              sessionStorage.clear();
+              // Redirect to login page
+              navigate('/signin', { replace: true });
+            }} 
+            className="nav-link text-light"
+            onMouseEnter={e => e.target.style.backgroundColor = '#343a40'} 
+            onMouseLeave={e => e.target.style.backgroundColor = ''}
+          >
             <span role="img" aria-label="logout">🚪</span> Logout
           </a>
         </li>
