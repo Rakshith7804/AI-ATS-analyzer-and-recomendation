@@ -5,26 +5,26 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleResumeClick = (e) => {
-    e.preventDefault();
-    navigate('/resume');
-  };
+  // const handleResumeClick = (e) => {
+  //   e.preventDefault();
+  //   navigate('/resume');
+  // };
 
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="col-md-2 d-flex flex-column vh-100 bg-dark text-light p-3 border border-secondary rounded shadow-sm" style={{ width: '200px' }}>
+    <nav className="col-md-2 d-flex flex-column vh-100 bg-dark text-light p-3 border border-secondary rounded shadow-sm" style={{ width: '250px' }}>
       <ul className="nav flex-column">
         <li className={`nav-item ${isActive('/') ? 'active' : ''}`}>
           <a href="/" className={`nav-link ${isActive('/') ? 'text-info active' : 'text-light'}`} style={{ background: isActive('/') ? 'linear-gradient(90deg, #3b82f6, #1e40af)' : 'none', color: isActive('/') ? '#ffffff' : '' }}>
             <span role="img" aria-label="home">🏠</span> Dashboard
           </a>
         </li>
-        <li className={`nav-item ${isActive('/resume') ? 'active' : ''}`}>
+        {/* <li className={`nav-item ${isActive('/resume') ? 'active' : ''}`}>
           <a href="/resume" onClick={handleResumeClick} className={`nav-link ${isActive('/resume') ? 'text-info active' : 'text-light'}`} onMouseEnter={e => e.target.style.backgroundColor = '#343a40'} onMouseLeave={e => e.target.style.backgroundColor = ''} style={{ background: isActive('/resume') ? 'linear-gradient(90deg, #3b82f6, #1e40af)' : 'none', color: isActive('/resume') ? '#ffffff' : '' }}>
             <span role="img" aria-label="resume">📄</span> Build Resumes
           </a>
-        </li>
+        </li> */}
         <li className={`nav-item ${isActive('/post-job') ? 'active' : ''}`}>
           <a href="/post-job" className={`nav-link ${isActive('/post-job') ? 'text-info active' : 'text-light'}`} onMouseEnter={e => e.target.style.backgroundColor = '#343a40'} onMouseLeave={e => e.target.style.backgroundColor = ''} style={{ background: isActive('/post-job') ? 'linear-gradient(90deg, #3b82f6, #1e40af)' : 'none', color: isActive('/post-job') ? '#ffffff' : '' }}>
             <span role="img" aria-label="post">📤</span> Post New Job

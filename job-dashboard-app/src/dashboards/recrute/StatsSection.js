@@ -5,10 +5,11 @@ const StatsSection = () => {
     <div className="col-12">
           <div className="d-flex justify-content-between mb-4">
             <h2 className="h4">DASHBOARD</h2>
-            <select className="form-select bg-dark text-light border-0" style={{ width: '100px' }}>
+            {/* <select className="form-select bg-dark text-light border-0" style={{ width: '100px' }}>
               <option>Ary</option>
-            </select>
+            </select> */}
           </div>
+          <hr></hr>
           <div className="row g-3 mb-4">
             <div className="col-3">
               <div className="bg-secondary p-3 rounded text-center">
