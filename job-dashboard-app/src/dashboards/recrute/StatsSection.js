@@ -4,39 +4,36 @@ const StatsSection = () => {
     return (
     <div className="col-12">
           <div className="d-flex justify-content-between mb-4">
-            <h2 className="h4">DASHBOARD</h2>
-            {/* <select className="form-select bg-dark text-light border-0" style={{ width: '100px' }}>
-              <option>Ary</option>
-            </select> */}
+            <h2 className="h4 text-gray-800">DASHBOARD</h2>
           </div>
-          <hr></hr>
+          <hr style={{ borderColor: '#e5e7eb' }}></hr>
           <div className="row g-3 mb-4">
             <div className="col-3">
-              <div className="bg-secondary p-3 rounded text-center">
-                <h3>12</h3>
-                <p className="mb-0">Listings</p>
-                <p className="mb-0 text-muted">Dutied</p>
+              <div className="bg-white p-3 rounded shadow-sm border border-gray-200 text-center">
+                <h3 className="text-blue-600">12</h3>
+                <p className="mb-0 text-gray-800">Listings</p>
+                <p className="mb-0 text-gray-500">Dutied</p>
               </div>
             </div>
             <div className="col-3">
-              <div className="bg-secondary p-3 rounded text-center">
-                <h3>258</h3>
-                <p className="mb-0">Applications</p>
-                <p className="mb-0 text-muted">Received</p>
+              <div className="bg-white p-3 rounded shadow-sm border border-gray-200 text-center">
+                <h3 className="text-blue-600">258</h3>
+                <p className="mb-0 text-gray-800">Applications</p>
+                <p className="mb-0 text-gray-500">Received</p>
               </div>
             </div>
             <div className="col-3">
-              <div className="bg-secondary p-3 rounded text-center">
-                <h3>27</h3>
-                <p className="mb-0">Talent's</p>
-                <p className="mb-0 text-muted">Softedged</p>
+              <div className="bg-white p-3 rounded shadow-sm border border-gray-200 text-center">
+                <h3 className="text-blue-600">27</h3>
+                <p className="mb-0 text-gray-800">Talent's</p>
+                <p className="mb-0 text-gray-500">Softedged</p>
               </div>
             </div>
             <div className="col-3">
-              <div className="bg-secondary p-3 rounded text-center">
-                <h3>6</h3>
-                <p className="mb-0">Hims</p>
-                <p className="mb-0 text-muted">Madi:</p>
+              <div className="bg-white p-3 rounded shadow-sm border border-gray-200 text-center">
+                <h3 className="text-blue-600">6</h3>
+                <p className="mb-0 text-gray-800">Hims</p>
+                <p className="mb-0 text-gray-500">Madi:</p>
               </div>
             </div>
           </div>

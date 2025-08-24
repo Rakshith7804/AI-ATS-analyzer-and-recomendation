@@ -10,18 +10,14 @@ import Hiring from './Hiring Pipeline';
 
 const Recrutedash = () => {
   return (
-    <div className="bg-dark text-light p-4 vh-100 vw-100 border border-secondary rounded flex-grow-1">
-      {/* <Header /> */}
-      <div className="row g-3">
-        <StatsSection />
-        <Jobposting />
-        <TopCandidates />
-        <Hiring />
-      </div>
-      <Routes>
-        {/* <Route path="/resume" element={<ResumeBuilder />} /> */}
-      </Routes>
-    </div>
+    <div className="bg-gray-100 text-gray-900 p-4 vh-100 vw-100 border border-gray-200 rounded flex-grow-1">
+          <div className="row g-3">
+            <StatsSection />
+            <Jobposting />
+            <TopCandidates />
+            <Hiring />
+          </div>
+        </div>
   );
 };
 

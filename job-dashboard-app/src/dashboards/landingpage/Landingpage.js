@@ -5,6 +5,7 @@ import KeyFeatures from '../landingpage/KeyFeatures.js';
 import HowItWorks from '../landingpage/HowItWorks.js';
 import WhyChooseATS from '../landingpage/WhyChooseATS.js';
 import CallToAction from '../landingpage/CallToAction.js';
+import Footer from '../landingpage/Footer.js';
 // import SignUp from '../landingpage/SignUp.js'; // Import SignUp component
 
 
@@ -18,6 +19,7 @@ const Landingpage = () => {
     <HowItWorks />
     <WhyChooseATS />
     <CallToAction />
+    <Footer />
     {/* <SignUp /> */}
     </>
   );
